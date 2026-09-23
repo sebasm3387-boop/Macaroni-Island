@@ -22,5 +22,15 @@ class IslandPanel: NSPanel {
         self.isOpaque = false
         self.backgroundColor = NSColor.clear
         self.level = .floating
+        self.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
+        self.hidesOnDeactivate = false
+        self.isMovable = false
+    }
+    
+    override func constrainFrameRect(
+        _ frameRect: NSRect,
+        to screen: NSScreen?
+    ) -> NSRect {
+        return frameRect
     }
 }
