@@ -21,8 +21,11 @@ class IslandPanel: NSPanel {
         )
         self.isOpaque = false
         self.backgroundColor = NSColor.clear
-        self.level = .floating
-        self.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
+        self.level = .statusBar
+        self.collectionBehavior = [
+            .canJoinAllSpaces,
+                .fullScreenAuxiliary,
+        ]
         self.hidesOnDeactivate = false
         self.isMovable = false
     }

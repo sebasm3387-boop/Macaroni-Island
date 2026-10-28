@@ -4,7 +4,10 @@ import AppKit
 
 struct ContentView: View {
     var body: some View {
-        RoundedRectangle(cornerRadius:10)
+        UnevenRoundedRectangle(topLeadingRadius: 0,
+        bottomLeadingRadius: 10,
+        bottomTrailingRadius: 10,
+        topTrailingRadius: 0)
             .fill(.black)
     }
 }
